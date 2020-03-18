@@ -22,8 +22,8 @@ zmodload zsh/complist
 _comp_options+=(globdots)
 
 HISTFILE=~/.config/zsh/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=4000
+SAVEHIST=4000
 
 # vi hotkeys for selecting completion options
 bindkey -v

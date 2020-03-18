@@ -1,11 +1,12 @@
 let mapleader=","
 
-call plug#begin('~/.config/vim/plugged')
+call plug#begin('~/.config/vim/plugins')
 Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 syntax on
 filetype on
+colorscheme delek
 
 let g:netrw_dirhistmax=0
 let g:multi_cursor_exit_from_insert_mode=1
@@ -21,7 +22,6 @@ set noswapfile
 set viminfo+=n~/.config/vim/viminfo
 set backspace=indent,eol,start
 set clipboard=unnamed,unnamedplus
-set numberwidth=2
 
 " replace tabs with 3 spaces
 set tabstop=3
@@ -60,10 +60,10 @@ vnoremap ; :
 vnoremap : ;
 
 " inserting codeblock brackets {} to functions
-nnoremap <leader>. o{<cr>}<++><esc>ko<tab>
-inoremap <leader>. <esc>o{<cr>}<++><esc>ko<tab>
-nnoremap <leader>/ A{<cr>}<++><esc>ko<tab>
-inoremap <leader>/ <esc>A{<cr>}<++><esc>ko<tab>
+nnoremap <leader>. o{<cr>}<++><esc>ko
+inoremap <leader>. <esc>o{<cr>}<++><esc>ko
+nnoremap <leader>/ A{<cr>}<++><esc>ko
+inoremap <leader>/ <esc>A{<cr>}<++><esc>ko
 
 " file manipulation (create, read, update, delete)
 nnoremap <leader>w :w<cr>

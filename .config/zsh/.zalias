@@ -48,3 +48,6 @@ alias dot="git --git-dir=$HOME/.config/.dotrepo --work-tree=$HOME"
 
 # quit terminal
 alias q="exit"
+
+# latex references
+alias getbib="zsh ~/Documents/shell/getbib.sh"

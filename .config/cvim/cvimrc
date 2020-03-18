@@ -22,3 +22,12 @@ map gw closeTabLeft
 map ga closeTabRight
 map zf yankUrl
 map zF multiYankUrl
+
+site '*://*.youtube.com/*' {
+   unmap f
+   unmap j
+   unmap k
+   unmap l
+   unmap c
+}
+
