@@ -1,4 +1,4 @@
-let homedirectory = '/Users/ormus'
+let homedirectory = 'D:/cygwin64/home/ormus'
 let configpath = '~/.config/cvim/cvimrc'
 set localconfig
 set noautofocus
