@@ -6,7 +6,6 @@ call plug#end()
 
 syntax on
 filetype on
-colorscheme delek
 
 let g:netrw_dirhistmax=0
 let g:multi_cursor_exit_from_insert_mode=1
