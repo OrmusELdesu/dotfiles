@@ -8,6 +8,7 @@ alias mus="cd ~/Music"
 alias mvs="cd ~/Movies"
 alias pics="cd ~/Pictures"
 alias trash="cd ~/.Trash"
+alias snap="cd $CHOME/Pictures/Screenshots"
 
 # school subjects
 alias school="docs; cd school"
@@ -49,5 +50,12 @@ alias dot="git --git-dir=$HOME/.config/.dotrepo --work-tree=$HOME"
 # quit terminal
 alias q="exit"
 
-# latex references
+# applications
 alias getbib="zsh ~/Documents/shell/getbib.sh"
+alias tlmgr="tlmgr.bat"
+alias gpg='gpg2'
+alias chrome='/cygdrive/c/"Program Files (x86)"/Google/Chrome/Application/chrome.exe'
+
+# open command shortcut
+alias open='cygstart'
+alias {o,op,ope,opne,onep}='open'
