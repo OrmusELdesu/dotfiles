@@ -1,4 +1,5 @@
 export PATH="/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH="/cygdrive/d/texlive/2019/bin/win32:$PATH"
 export MANPATH="/opt/local/share/man:$MANPATH"
 export EDITOR="/opt/local/bin/vim"
 export VIMHOME="$HOME/.config/vim"
