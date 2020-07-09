@@ -7,6 +7,7 @@ This repository contains my important configuration files for each machine runni
    - `vim /etc/passwd`
    - `user:*:/home/user:/bin/bash` to `user:*:/home/user:/bin/zsh`
    - restart zsh
+   - change windows desktop shortchut .lnk file to have `/usr/bin/zsh -l`
 
 ## vim-plug
 - to autoload my plugin manager with the central folder in `~/.config/vim/` the file `plug.vim` needs to be place on `/usr/vim/share/vim/autoload/`
