@@ -7,9 +7,9 @@ This repository contains my important configuration files for each machine runni
    - one is to modify `/etc/nsswitch.conf` to specify `db_shell: /bin/zsh`
    - another is to create a `/etc/passwd` and `/etc/group` files using `mkpasswd -c > /etc/passwd` and `mkgroup -c > /etc/group`
 - and then modifying the contents of the file to specify the default shell to `/bin/zsh`
-
-- if neither approch has worked then we resort to the method below
-- change windows desktop shortchut .lnk file to have `/usr/bin/zsh -l`
+- then append a dash `-` to the end of the cygwin shortcut `.lnk` file to specify standard input
+- if neither approach has worked then we resort to the method below
+- append `/usr/bin/zsh -l` to the windows desktop shortcut .lnk file 
 
 ## environment variables
 - now that the shell is configured, the commands are no longer available and displays an error message `command not found`
