@@ -3,11 +3,26 @@
 This repository contains my important configuration files for each machine running the Z-shell.
 
 ## default shell
-- before cloning this repo ensure modify `/etc/passwd` and set the default shell of the current user to `/bin/zsh` so to avoid the bash instance from ruining the configs.
-   - `vim /etc/passwd`
-   - `user:*:/home/user:/bin/bash` to `user:*:/home/user:/bin/zsh`
-   - restart zsh
-   - change windows desktop shortchut .lnk file to have `/usr/bin/zsh -l`
+- there are two ways of modifying the cygwin shell at this current point in time.
+   - one is to modify `/etc/nsswitch.conf` to specify `db_shell: /bin/zsh`
+   - another is to create a `/etc/passwd` and `/etc/group` files using `mkpasswd -c > /etc/passwd` and `mkgroup -c > /etc/group`
+- and then modifying the contents of the file to specify the default shell to `/bin/zsh`
+
+- if neither approch has worked then we resort to the method below
+- change windows desktop shortchut .lnk file to have `/usr/bin/zsh -l`
+
+## environment variables
+- now that the shell is configured, the commands are no longer available and displays an error message `command not found`
+- to fix this, we add extra environment paths to windows:
+   - `Control Panel > System > Advanced System Settings > Environment Variables`
+- create a new variable for the current user called `CYGWIN_HOME`, and add the path to your cygwin installation `D:/cygwin64`
+- append to the end of `Path` variable for the current user the following:
+   - `%CYGWIN_HOME%\bin;`
+   - `%CYGWIN_HOME%\sbin;`
+   - `%CYGWIN_HOME%\usr\bin;`
+   - `%CYGWIN_HOME%\usr\sbin;`
+   - `%CYGWIN_HOME%\usr\local\bin;`
+   - `%CYGWIN_HOME%\usr\local\sbin`
 
 ## vim-plug
 - to autoload my plugin manager with the central folder in `~/.config/vim/` the file `plug.vim` needs to be place on `/usr/vim/share/vim/autoload/`
